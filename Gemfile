@@ -32,6 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'haml-rails'
+gem 'devise'
+
+gem 'pry'
+gem 'pry-byebug'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
