@@ -37,6 +37,7 @@ gem 'devise'
 
 gem 'pry'
 gem 'pry-byebug'
+gem 'pusher'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
