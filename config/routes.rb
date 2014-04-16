@@ -11,6 +11,7 @@ Nmg::Application.routes.draw do
   get 'game/init' => 'games#init'
   get 'turn/start' => 'turns#create', as: :turn_start
 
+  resources :turns, :only => ['new', 'update']
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

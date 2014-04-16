@@ -1,6 +1,6 @@
 class TurnsController < ApplicationController
 
-  def create
+  def new
     @turn = Turn.new
     puts 'turn init'
   end
