@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140416121447) do
+ActiveRecord::Schema.define(version: 20140416185808) do
 
   create_table "countries", force: true do |t|
     t.string   "name"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 20140416121447) do
     t.string   "market_segment"
     t.float    "buying_prise"
     t.float    "max_selling_price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "games", force: true do |t|
+    t.integer  "turn_owner", default: 0
+    t.boolean  "reverse",    default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
