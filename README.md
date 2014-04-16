@@ -6,5 +6,5 @@ nmg
 - Rails(4.0.4)
 - MySQL
 - jQuery
-- Haml
+- Haml(ERB禁止)
 - Pusher
