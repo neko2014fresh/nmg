@@ -8,3 +8,10 @@ nmg
 - jQuery
 - Haml(ERB禁止)
 - Pusher
+
+initial settings
+---
+
+```
+cp config/database.yml.sample config/database.yml
+```
