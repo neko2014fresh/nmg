@@ -39,6 +39,7 @@ gem 'haml-rails'
 gem 'devise'
 
 gem 'pry'
+gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pusher'
 # Use ActiveModel has_secure_password
