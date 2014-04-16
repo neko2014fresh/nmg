@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @country.name
+%p
+  %b Market scale:
+  = @country.market_scale
+%p
+  %b Product stock:
+  = @country.product_stock
+%p
+  %b Market segment:
+  = @country.market_segment
+%p
+  %b Buying prise:
+  = @country.buying_prise
+%p
+  %b Max selling price:
+  = @country.max_selling_price
+
+= link_to 'Edit', edit_country_path(@country)
+\|
+= link_to 'Back', countries_path

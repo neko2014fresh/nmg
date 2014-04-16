@@ -1,0 +1,29 @@
+%h1 Listing countries
+
+%table
+  %tr
+    %th Name
+    %th Market scale
+    %th Product stock
+    %th Market segment
+    %th Buying prise
+    %th Max selling price
+    %th
+    %th
+    %th
+
+  - @countries.each do |country|
+    %tr
+      %td= country.name
+      %td= country.market_scale
+      %td= country.product_stock
+      %td= country.market_segment
+      %td= country.buying_prise
+      %td= country.max_selling_price
+      %td= link_to 'Show', country
+      %td= link_to 'Edit', edit_country_path(country)
+      %td= link_to 'Destroy', country, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Country', new_country_path
