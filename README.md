@@ -9,6 +9,8 @@ nmg
 - Haml(ERB禁止)
 - Pusher
 
+- ゲーム部分をNodeの使用を若干検討中
+
 initial settings
 ---
 
