@@ -1,7 +1,10 @@
 class GamesController < ApplicationController
 
+  attr_accessor :current_turn_owner
+
   def init
     @game = Game.instance
+    @current_turn_owner = @game.current_turn_owner
     start
   end
 
@@ -11,7 +14,7 @@ class GamesController < ApplicationController
 
   def start
     id = params[:id]
-    @turn = Turn.new owner: id
+    @turn = Turn.new owner: @current_turn_owner
     render "base"
   end
 
@@ -21,13 +24,12 @@ class GamesController < ApplicationController
   end
 
   def finish
-    
+    _update_turn_owner 
   end
 
   private
 
-  def update_turn_owner
-    
+  def _update_turn_owner
   end
 
 end
