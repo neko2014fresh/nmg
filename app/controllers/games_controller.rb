@@ -1,34 +1,35 @@
 class GamesController < ApplicationController
 
+  attr_accessor :current_turn_owner
+
   def init
     @game = Game.instance
+    @current_turn_owner = @game.current_turn_owner
     start
   end
 
-  def finish
+  def rotate
     
   end
 
   def start
-    # TurnsController.new
-    # redirect_to turn_start_path
     id = params[:id]
-    @turn = Turn.new owner: id
+    @turn = Turn.new owner: @current_turn_owner
+    render "base"
   end
 
   def update
-    if @turn.finish?
-      puts 'turn finish'
-      self.finish
-    else
-      @turn.shift_status!
-    end
+    rotate if @turn.finish?
+    @turn.shift_status!
+  end
+
+  def finish
+    _update_turn_owner 
   end
 
   private
 
-  def update_turn_owner
-    
+  def _update_turn_owner
   end
 
 end
