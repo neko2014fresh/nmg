@@ -5,7 +5,9 @@ class DashboardController < ApplicationController
   end
 
   def index
-    render json: { hoge: "fug"}
+    # render :text => 'NMG'
+    # render :text => " NMG This account has id = #{params[:id]}"
+
   end
 
 end

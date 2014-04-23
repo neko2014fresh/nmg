@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import "bootstrap-responsive";
+// @import "bootstrap-responsive";
 
 // universal
 
@@ -7,8 +7,16 @@ html {
   overflow-y: scroll;
 }
 
+head {
+  padding-top: 3px;
+}
+
 body {
-  padding-top: 60px;
+  padding-top: 10px;
+}
+
+footer {
+  padding-bottom: 5px;
 }
 
 section {
@@ -39,6 +47,10 @@ textarea {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+}
+
+.glyphicon {
+  font-size: 20px;
 }
 
 #logo:hover {
