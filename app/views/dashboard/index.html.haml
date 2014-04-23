@@ -7,4 +7,5 @@
 %button START
 
 %footer
-  %button Log Out...
+  %div 
+    =link_to 'Log Out...', '/users/sign_in',:action => 'logout', :data => {:method => 'post', :confirm => 'Log Out From Here ??' }
