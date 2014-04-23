@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require ./vender/underscore-min
+//= require bootstrap
 //= require_tree .
 
