@@ -1,16 +1,11 @@
 class MypageController < ApplicationController
   
   def show_data
-    # データがひとつの場合を想定
-    if User.first.name = nil
-      @no_data = NoData
-    else
-      user_data = User.first
-      @name = User.first.name
-      @net_income = User.first.net_income
-      @cash = User.first.cash
-    end
+    # データがひとつの場合を想定 
+    user_data = User.first
+    @email = user_data.email
+    @net_profit = user_data.net_profit
+    @cashe = user_data.cashe
   end
-
 
 end

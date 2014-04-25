@@ -1,5 +1,16 @@
 %p
-  %b あなたの成績
-  [名前]: @name
-  [純利益]: @net_income
-  [キャッシュ]: @cash
+  %h2 成績
+  -if @no_data == "NoData"
+    @nodata
+  -else
+    %div
+      名前: 
+      = @email
+    %div
+      純利益: 
+      = @net_profit
+    %div
+      キャッシュ:
+      = @cashe
+
+
