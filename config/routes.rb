@@ -8,6 +8,8 @@ Nmg::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root :to => 'dashboard#index'
 
+  get "log_out" => "sessions#destroy", :as => "sign_out"
+
   get 'dashboard' => 'dashboard#index'
 
   get 'game/init' => 'games#init'
