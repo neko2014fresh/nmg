@@ -1,4 +1,6 @@
 Nmg::Application.routes.draw do
+  get 'mypage/show_data'
+
   resources :countries
 
   devise_for :users
