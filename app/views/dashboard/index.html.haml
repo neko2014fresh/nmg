@@ -8,4 +8,4 @@
 
 %footer
   %div 
-    =link_to 'Log Out...', '/users/sign_in',:action => 'logout', :data => {:method => 'post', :confirm => 'Log Out From Here ??' }
+    =link_to 'Log Out...', '/users/sign_out', :data => { :method => 'delete', :confirm => 'Log Out From Here ??' }
