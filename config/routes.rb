@@ -14,6 +14,8 @@ Nmg::Application.routes.draw do
 
   get 'country' => 'countries#index'
 
+  get 'mypage' => 'mypage#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
