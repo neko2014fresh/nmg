@@ -8,7 +8,9 @@ Nmg::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root :to => 'dashboard#index'
 
-  get "log_out" => "sessions#destroy", :as => "sign_out"
+  get 'log_out' => 'sessions#destroy', :as => 'log_out'
+
+  get 'sign_out' => 'dashboard#sign_out'
 
   get 'dashboard' => 'dashboard#index'
 

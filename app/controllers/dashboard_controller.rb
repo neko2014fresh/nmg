@@ -10,10 +10,10 @@ class DashboardController < ApplicationController
 
   end
 
-  # def logout
-  #   reset_session
-  #   redirect_to '/users/sign_in'
-  # end
+  def sign_out
+    session[:user_id] = nil
+    redirect_to '/users/sign_in'
+  end
 
 
 end
