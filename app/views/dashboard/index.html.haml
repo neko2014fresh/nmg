@@ -4,6 +4,6 @@
     =link_to 'Sign Out', { :controller => 'dashboard', :action => 'sign_out' }, :data => { :method => 'get', :confirm => 'Do you Sign Out ??'}
     / =link_to 'Log Out...', '/log_out', :data => { :method => 'get', :confirm => 'Log Out From Here ??' }
   %p= link_to Country, '/countries#index'
-  %span.glyphicon.glyphicon-user
+  %button= link_to 'My Page','/mypage#index'
 
 %button START
