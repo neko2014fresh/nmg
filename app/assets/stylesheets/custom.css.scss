@@ -7,12 +7,12 @@ html {
   overflow-y: scroll;
 }
 
-head {
-  padding-top: 3px;
-}
+// head {
+//   padding-top: 3px;
+// }
 
 body {
-  padding-top: 160px;
+  padding-top: 80px;
 }
 
 footer {
@@ -31,7 +31,7 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  line-height: 1.5;
 }
 
 h1 {
@@ -106,6 +106,9 @@ p {
 .page_title {
   color:white;
 
+// .nav-bar {
+
+// }
 // .menu_size
   // position: absolute;
   // top: 30px;
