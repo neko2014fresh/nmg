@@ -19,9 +19,8 @@
           %ul.nav.navbar-nav.pull-right
             %li
               %a(href= mypage_show_data_path) Mypage
-              / = link_to "Mypage", '/mypage#show_data'
             %li
-              =link_to 'Sign Out', { :controller => 'dashboard', :action => 'sign_out' }, :data => { :method => 'get', :confirm => 'Do you Sign Out ??'}
+              =link_to 'Sign Out', 'users/sign_out', :data => { :method => 'delete', :confirm => 'Do you Sign Out ??'}
   / %nav.navbar.navbar-default.navbar-fixed-top{role: "navigation"}
   /   .container-fluid
   /     / Brand and toggle get grouped for better mobile display
