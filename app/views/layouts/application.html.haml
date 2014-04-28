@@ -4,6 +4,22 @@
   = stylesheet_link_tag "application", media: "all"
   =javascript_include_tag "application"
   =csrf_meta_tags
-  %h1 NMG
+
+%header.navbar.navbar-fixed-top.navbar-inverse
+  %div.navbar-inner
+    %div.container
+      / %a.sample(href= root_path)
+      /   = image_tag('nekologo.png')
+      %nav
+        %ul.nav.pull-right
+          %li
+            %a(href='/mypage#show_data') Mypage
+            / = link_to "Mypage", '/mypage#show_data'
+          %li
+            %a(href='/countries#index') Country
+            / = link_to "Country", '/countries#index'
+          %li 
+            =link_to 'Sign Out', { :controller => 'dashboard', :action => 'sign_out' }, :data => { :method => 'get', :confirm => 'Do you Sign Out ??'}
+
 %body
   =yield
