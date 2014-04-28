@@ -5,8 +5,6 @@
   =javascript_include_tag "application"
   =csrf_meta_tags
 
-
-
 %body
   %header.navbar.navbar-fixed-top.navbar-inverse
     %div.navbar-inner
@@ -14,13 +12,14 @@
         / %a.sample(href= root_path)
         /   = image_tag('nekologo.png')
         %nav
-          %h1.nav.navbar-nav.pull-left
-            %a(href= root_path) NMG
+          %ul.nav.navbar-nav.pull-left
+            %li
+              %a(href= root_path) NMG
           %ul.nav.navbar-nav.pull-right
             %li
               %a(href= mypage_show_data_path) Mypage
             %li
-              =link_to 'Sign Out', 'users/sign_out', :data => { :method => 'delete', :confirm => 'Do you Sign Out ??'}
+              =link_to 'Sign Out', destroy_user_session_path, :data => { :method => 'delete', :confirm => 'Do you Sign Out ??'}
   / %nav.navbar.navbar-default.navbar-fixed-top{role: "navigation"}
   /   .container-fluid
   /     / Brand and toggle get grouped for better mobile display

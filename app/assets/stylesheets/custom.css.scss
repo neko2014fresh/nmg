@@ -12,7 +12,7 @@ html {
 // }
 
 body {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 footer {
@@ -115,12 +115,20 @@ p {
   // z-index: 100;
 }
 
+.pull-left {
+  color:white;
+  &:hover{
+    color:#dfdfdf;
+  }
+}
+
 .navbar-inverse .navbar-nav > li > a {
   color:white;
   &:hover{
     color:#dfdfdf;
   }
 }
+
 
 
 // .menu_btn {
