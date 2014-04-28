@@ -1,9 +1,10 @@
-%header 
-  %h1 Dash Board
-  %div
-    =link_to 'Sign Out', { :controller => 'dashboard', :action => 'sign_out' }, :data => { :method => 'get', :confirm => 'Do you Sign Out ??'}
-    / =link_to 'Log Out...', '/log_out', :data => { :method => 'get', :confirm => 'Log Out From Here ??' }
-  %p= link_to Country, '/countries#index'
-  %span.glyphicon.glyphicon-user
+/ ゲームスタートボタンなので後日リンクの修正必要
+%h1.page_title
+  DashBoard
 
-%button START
+%div.center
+  = image_tag('nekologo.png')
+  %h1 NMG
+  %h2 Nekojarashi Management Game
+  %a.btn(href="http://example.com" title="title")
+    GameStart
