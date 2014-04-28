@@ -15,7 +15,7 @@ class Users::SessionsController < Devise::SessionsController
   def destroy
     # super
     session[:user_id] = nil
-    redirect_to 'users/sign_in', :action => 'get'
+    redirect_to '/users/sign_in', :action => 'delete'
     # redirect_to root_url, :notice => "Logged out!"
   end
 
