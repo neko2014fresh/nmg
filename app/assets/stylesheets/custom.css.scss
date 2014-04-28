@@ -99,13 +99,12 @@ p {
   background-color: #9FD9F6;
 }
 
-.center {
-  margin:0 auto;
-}
+// .btn:hover {
+//   background-color: #9FD9F6;
+// }
 
 .page_title {
   color:white;
-
 // .nav-bar {
 
 // }
@@ -115,6 +114,14 @@ p {
   // left: 30px;
   // z-index: 100;
 }
+
+.navbar-inverse .navbar-nav > li > a {
+  color:white;
+  &:hover{
+    color:#dfdfdf;
+  }
+}
+
 
 // .menu_btn {
 //   color:white;

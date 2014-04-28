@@ -1,13 +1,13 @@
 %h1 成績
 %h4
   %div
-    アカウント名: 
-    = @email
-  %div
-    純利益: 
-    = @net_profit
-  %div
-    キャッシュ:
-    = @cashe
+    - @user_data.each do |account|
+      %div
+        = "アカウント名: #{account.email}"
+      %div
+        = "純利益: #{account.net_profit}"
+      %div
+        = "キャッシュ: #{account.cash}"
+      %br
 
 
