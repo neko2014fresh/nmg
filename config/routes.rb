@@ -1,5 +1,4 @@
 Nmg::Application.routes.draw do
-  get 'mypage/show_data'
 
   resources :countries
 
@@ -10,17 +9,13 @@ Nmg::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root :to => 'dashboard#index'
 
-  get 'log_out' => 'sessions#destroy', :as => 'log_out'
-
-  get 'sign_out' => 'dashboard#sign_out'
-
   get 'dashboard' => 'dashboard#index'
 
   get 'game/init' => 'games#init'
 
   get 'country' => 'countries#index'
 
-  get 'mypage' => 'mypage#index'
+  get 'mypage/show_data'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
