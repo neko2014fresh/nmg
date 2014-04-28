@@ -10,7 +10,7 @@ Nmg::Application.routes.draw do
 
   get 'log_out' => 'sessions#destroy', :as => 'log_out'
 
-  get 'sign_out' => 'dashboard#sign_out'
+  delete 'sign_out' => 'dashboard#sign_out'
 
   get 'dashboard' => 'dashboard#index'
 
